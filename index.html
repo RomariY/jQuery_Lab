@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>jQuery</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+   <table style="border: solid 1px black" class = "table table-striped table-hover">
+       <thead class="thead-dark">
+           <tr>
+               <th>#</th>
+               <th>Назва виробу</th>
+               <th>Постачальник сировини</th>
+               <th>Дата реалізації виробу</th>
+               <th>Торгова точка</th>
+               <th>Кількість, шт</th>
+               <th>Ціна за одну булку, грн</th>
+               <th>Наявність 5%-ї націнки за поставкун</th>
+               <th></th>
+               <th></th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr data-index="1">
+                <td>1</td>
+                <td class="1-row">Батон</td>
+                <td class="1-row">Харків_Хліб</td>
+                <td class="1-row">11.12.02</td>
+                <td class="1-row">13/2-Б</td>
+                <td class="1-row">77</td>
+                <td class="1-row">12.95</td>
+                <td class="1-row">Так</td>
+                <td><a data-index="1" class="1-row-btn-edit edit btn btn-secondary" href="#">Редагувати</a></td>
+                <td><a data-index="1" class="delete btn btn-danger active" href="#">Видалити</a></td>
+           </tr>
+           <tr data-index="2">
+                <td>2</td>
+                <td class="2-row">Батон</td>
+                <td class="2-row">Харків_Хліб</td>
+                <td class="2-row">11.12.02</td>
+                <td class="2-row">13/2-Б</td>
+                <td class="2-row">77</td>
+                <td class="2-row">12.95</td>
+                <td class="2-row">Так</td>
+                <td><a data-index="2" class="2-row-btn-edit edit btn btn-secondary" href="#">Редагувати</a></td>
+                <td><a data-index="2" class="delete btn btn-danger active" href="#">Видалити</a></td>
+            </tr>
+       </tbody>
+   </table>
+   <form id="inputForm" class="input-group">
+       <input  type="text" id="nameInput" placeholder="Ім'я" required>
+       <input  type="text" id="addressInput" placeholder="Постачальник" required>
+       <input  type="text" id="codeInput" placeholder="Дата" required>
+       <input  type="text" id="numInput" placeholder="Торг точка" required>
+       <input  type="text" id="dateInput" placeholder="Кількість, шт" required>
+       <input  type="text" id="procInput" placeholder="Ціна" required>
+       <input  type="text" id="loanInput" placeholder="Наявність націнки" required>
+       <input  type="submit" id="inputBtn" value="Send" class="btn btn-success">
+   </form>
+  
+</body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="index.js"></script>
+</html>
